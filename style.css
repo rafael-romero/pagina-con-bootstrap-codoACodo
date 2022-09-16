@@ -1,0 +1,61 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+#link-logo {
+  position: relative;
+  left: 7rem;
+}
+
+#logo-codo {
+  width: 140px;
+  height: 80px;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-nav:last-child {
+  color: rgb(21,115,71);
+  font-weight: 600;
+}
+
+#navbarNav {
+  position: absolute;
+  right: 5rem;
+}
+
+.portada {
+  width: 100vw;
+  height: calc(100vh - 106px);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(img/ba1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  color: aliceblue;
+  font-weight: 600;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.portada__contenedor {
+  width: 40%;
+  margin-right: 8rem;
+}
+
+.contenedor__botones {
+  display: flex;
+  justify-content: right;
+}
+
+.contenedor__botones > button {
+  margin-left: 1rem;
+}

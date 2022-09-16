@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Practica Bootstrap </title>
+    <meta
+      name="description"
+      content="Debemos realizar un pagina utilizando bootstrap, guiados por un diseño dado"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="/Bootstrap/bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Bootstrap/bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/oradores.css" />
+    <link rel="stylesheet" href="css/lugar-fecha.css" />
+    <link rel="stylesheet" href="css/formulario.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md bg-light">
+        <div class="container-fluid text-bg-dark p-1">
+          <a class="navbar-brand text-bg-dark" href="#" id="link-logo">
+            <img
+              src="img/codoacodo.png"
+              alt="logo-codo-a-codo"
+              id="logo-codo"
+            />Conf Bs As</a
+          >
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-bg-dark"
+                  aria-current="page"
+                  href="#conferencia"
+                  >La Conferencia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bg-dark" href="#oradores"
+                  >Los Oradores</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bg-dark" href="#lugar-fecha"
+                  >Lugar y Fecha</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bg-dark" href="#formulario"
+                  >Conviertete en Orador</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bg-dark text-reset" href="#"
+                  >Comprar Tickets</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="portada">
+        <div class="portada__contenedor" id="conferencia">
+          <h2 class="portada__titulo text-end">Conf Bs As</h2>
+          <p class="portada__texto text-end">
+            Bs As llega por primera vez a Argentina. Un evento para compartir
+            con nuestra comunidad el conocimiento y experiencia de los expertos
+            que estan creando el futuro de Internet. Ven a conocer a miembros
+            del evento, a otros estudiantes de Codo a Codo y los oradores de
+            primer nivel que tenemos para ti. Te esperamos!
+          </p>
+          <div class="contenedor__botones">
+            <button type="button" class="btn btn-outline-light">
+              Quiero ser orador
+            </button>
+            <button type="button" class="btn btn-success">
+              Comprar Tickets
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="oradores">
+        <h6 class="oradores__subtitulo">conoce a los</h6>
+        <h2 class="oradores__titulo" id="oradores">oradores</h2>
+        <div class="contenedor__cartas">
+          <div class="card container-lg w-25 border-0">
+            <img src="img/steve.jpg" class="card-img-top" alt="Steve-Jobs" />
+            <div class="card-body">
+              <h6 class="badge text-bg-warning">Javascrit</h6>
+              <h6 class="badge text-bg-info text-white">React</h6>
+              <h5 class="card-title">Steve Jobs</h5>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+                unde accusamus, eaque inventore iste pariatur recusandae rem
+                distinctio provident ut eligendi animi aperiam, perspiciatis
+                magni laboriosam explicabo blanditiis aspernatur! Cupiditate.
+              </p>
+            </div>
+          </div>
+          <div class="card container-lg w-25 border-0">
+            <img src="img/bill.jpg" class="card-img-top" alt="Bill-Gates" />
+            <div class="card-body">
+              <h6 class="badge text-bg-warning">Javascrit</h6>
+              <h6 class="badge text-bg-info text-white">React</h6>
+              <h5 class="card-title">Bill-Gates</h5>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+                unde accusamus, eaque inventore iste pariatur recusandae rem
+                distinctio provident ut eligendi animi aperiam, perspiciatis
+                magni laboriosam explicabo blanditiis aspernatur! Cupiditate.
+              </p>
+            </div>
+          </div>
+          <div class="card container-lg w-25 border-0">
+            <img src="img/ada.jpeg" class="card-img-top" alt="Ada-Lovelace" />
+            <div class="card-body">
+              <h6 class="badge text-bg-secondary">Negocios</h6>
+              <h6 class="badge text-bg-danger">Startups</h6>
+              <h5 class="card-title">Ada Lovelace</h5>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+                unde accusamus, eaque inventore iste pariatur recusandae rem
+                distinctio provident ut eligendi animi aperiam, perspiciatis
+                magni laboriosam explicabo blanditiis aspernatur! Cupiditate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lugar-fecha" id="lugar-fecha">
+        <img
+          src="img/honolulu.jpg"
+          alt="honolulu"
+          class="lugar-fecha__imagen border-end"
+        />
+        <div class="contenedor-lugar">
+          <h4>Bs As - Octubre</h4>
+          <p>
+            Buenos Aires es la provincia y localidad mas grande del estado de
+            Argentina, en los Estados Unidos. Honolulu es la mas sureña de entre
+            las principales ciudades estadounidenses. Aunque el nombe de
+            Honolulu se refiere al area urbana en la costa sureste de la isla de
+            Oahu, la ciudad y el condado de Honolulu han formado una
+            ciudad-condado consolidada que cubre toda la ciudad (aproximadamente
+            600 km<sup>2</sup> de superficie).
+          </p>
+          <button type="button" class="btn btn-outline-light">
+            Conoce mas
+          </button>
+        </div>
+      </div>
+
+      <div id="formulario" class="formulario .container-md">
+        <form action="">
+          <h6 class="formulario__subtitulo">conviertete en un</h6>
+          <h2 class="formulario__titulo">orador</h2>
+          <p class="formulario__parrafo">
+            Anotate como orador para dar una
+            <span class="text-decoration-underline">charla ignite</span>.
+            Cuentanos de que quieres hablar!
+          </p>
+          <div class="contenedor__nombre-y-apellido">
+            <div class="form-floating mb-3 col-6">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingNombre"
+                placeholder="Nombre"
+              />
+              <label for="floatingNombre">Nombre</label>
+            </div>
+            <div class="form-floating col-5">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingApellido"
+                placeholder="Apellido"
+              />
+              <label for="floatingApellido">Apellido</label>
+            </div>
+          </div>
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Sobre que quieres hablar?"
+              id="floatingTextarea"
+            ></textarea>
+            <label for="floatingTextarea">Sobre que quieres hablar?</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              readonly
+              class="form-control-plaintext"
+              id="floatingEmptyPlaintextInput"
+              placeholder="titulo"
+            />
+            <label for="floatingEmptyPlaintextInput"
+              >Recuerda incluir un titulo para tu charla</label
+            >
+          </div>
+          <button class="formulario__boton">Enviar</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <ul class="footer__lista d-flex flex-row justify-content-evenly align-items-center">
+        <li class="footer__item">
+          <a href="#" class="footer__link text-white text-decoration-none"
+            >Preguntas Frecuentes</a
+          >
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link text-white text-decoration-none"
+            >Contactenos</a
+          >
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link text-white text-decoration-none"
+            >Prensa</a
+          >
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link text-white text-decoration-none"
+            >Conferencias</a
+          >
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link text-white text-decoration-none"
+            >Terminos y Condiciones</a
+          >
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link text-white text-decoration-none"
+            >Privacidad</a
+          >
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link text-white text-decoration-none"
+            >Estudiantes</a
+          >
+        </li>
+      </ul>
+    </footer>
+
+    <script src="/Bootstrap/bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
