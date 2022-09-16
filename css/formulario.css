@@ -1,0 +1,43 @@
+.formulario {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.formulario__subtitulo,
+.formulario__titulo {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.formulario__parrafo {
+  text-align: center;
+}
+
+.contenedor__nombre-y-apellido {
+  display: flex;
+  justify-content: space-between;
+}
+
+#floatingNombre,
+#floatingApellido {
+}
+
+#floatingTextarea {
+  height: 8rem;
+  margin: 0.5rem 0 0.2rem;
+}
+
+#floatingEmptyPlaintextInput {
+  padding: 0;
+}
+
+.formulario__boton {
+  background-color: rgb(150, 201, 62);
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.7rem;  
+  
+}

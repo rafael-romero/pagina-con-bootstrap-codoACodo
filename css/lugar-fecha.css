@@ -1,0 +1,14 @@
+.lugar-fecha {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.lugar-fecha__imagen {
+  width: 50vw;
+}
+
+.contenedor-lugar {
+  padding: 1rem;
+  background-color: rgb(53, 58, 64);
+  color: aliceblue;
+}

@@ -1,0 +1,15 @@
+.footer {
+  margin-top: 1rem;
+  background-color: rgb(29, 64, 84);
+  height: 100px;
+  color: aliceblue;
+}
+.footer__lista {
+  height: 100px;
+}
+
+.footer__item {
+  list-style-type: none;
+  width: 6rem;
+  word-wrap: break-word;
+}

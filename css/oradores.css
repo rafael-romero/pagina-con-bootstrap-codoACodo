@@ -1,0 +1,16 @@
+.oradores {
+  margin-bottom: 2rem;
+}
+
+.oradores__subtitulo,
+.oradores__titulo {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contenedor__cartas {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 1.5rem;
+}
