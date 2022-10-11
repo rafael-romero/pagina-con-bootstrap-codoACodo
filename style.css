@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-nav:last-child {
-  color: rgb(21,115,71);
+  color: rgb(21, 115, 71);
   font-weight: 600;
 }
 
@@ -58,4 +58,9 @@ body {
 
 .contenedor__botones > button {
   margin-left: 1rem;
+}
+
+.error {
+  font-weight: 700;
+  color: red;
 }

@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/lugar-fecha.css" />
     <link rel="stylesheet" href="css/formulario.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/comprar-tickets.css" />
   </head>
   <body>
     <header>
@@ -61,7 +62,9 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-bg-dark text-reset" href="#"
+                <a
+                  class="nav-link text-bg-dark text-reset"
+                  href="#comprar-tickets"
                   >Comprar Tickets</a
                 >
               </li>
@@ -173,7 +176,7 @@
             <span class="text-decoration-underline">charla ignite</span>.
             Cuentanos de que quieres hablar!
           </p>
-          <div class="contenedor__nombre-y-apellido">
+          <div class="contenedor__nombre-y-apellido row gx-3">
             <div class="form-floating mb-3 col-6">
               <input
                 type="text"
@@ -183,7 +186,7 @@
               />
               <label for="floatingNombre">Nombre</label>
             </div>
-            <div class="form-floating col-5">
+            <div class="form-floating col-6">
               <input
                 type="text"
                 class="form-control"
@@ -215,6 +218,126 @@
           </div>
           <button class="formulario__boton">Enviar</button>
         </form>
+      </div>
+
+      <div class="comprar-tickets" id="comprar-tickets">
+        <div class="contenedor__descuentos">
+          <div class="row justify-content-center">
+            <div class="col-sm-4">
+              <div class="card border-primary text-center rounded-0">
+                <div class="card-body">
+                  <h5 class="card-title">Estudiante</h5>
+                  <h6>Tienen un descuento</h6>
+                  <p class="card-text mt-3">80%</p>
+                  <p>* presentar documentacion</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card border-success text-center rounded-0">
+                <div class="card-body">
+                  <h5 class="card-title">Trainee</h5>
+                  <h6>Tienen un descuento</h6>
+                  <p class="card-text mt-3">50%</p>
+                  <p>* presentar documentacion</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card border-warning text-center rounded-0">
+                <div class="card-body">
+                  <h5 class="card-title">Junior</h5>
+                  <h6>Tienen un descuento</h6>
+                  <p class="card-text mt-3">15%</p>
+                  <p>* presentar documentacion</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form action="" class="formulario-comprar-tickets">
+          <h6 class="formulario__subtitulo">venta</h6>
+          <h2 class="formulario__titulo mb-3">valor de ticket $200</h2>
+          <div class="contenedor__nombre-y-apellido row gx-3">
+            <div class="form-floating mb-3 col-6">
+              <input
+                type="text"
+                class="form-control"
+                id="nombreflotante"
+                placeholder="Nombre"
+              />
+              <label for="nombreflotante">Nombre</label>
+            </div>
+            <div class="form-floating col-6">
+              <input
+                type="text"
+                class="form-control"
+                id="apellidoFlotante"
+                placeholder="Apellido"
+              />
+              <label for="apellidoFlotante">Apellido</label>
+            </div>
+          </div>
+          <div class="form-floating">
+            <input
+              type="email"
+              class="form-control"
+              id="correoFlotante"
+              placeholder="Correo"
+            />
+            <label for="correoFlotante">Correo</label>
+          </div>
+          <div class="row contenedor__cantidad-y-categoria d-flex gx-3 mt-3">
+            <div class="mb-3 col-6">
+              <label for="cantidad-input" class="form-label">Cantidad</label>
+              <input
+                type="number"
+                class="form-control"
+                id="cantidad-input"
+                placeholder="Cantidad"
+                min="1"
+                max="999"
+              />
+            </div>
+
+            <div class="mb-3 col-6">
+              <label for="input-select" class="form-label">Categoria</label>
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="input-select"
+              >
+                <option value="1">Estudiante</option>
+                <option value="2">Trainee</option>
+                <option value="3">Junior</option>
+              </select>
+            </div>
+          </div>
+
+          <div
+            class="col-12 bg-primary bg-opacity-25 contenedor__total-pagar ps-3 rounded"
+          >
+            <input
+              type="text"
+              readonly
+              class="form-control-plaintext"
+              id="total-a-pagar"
+              value="Total a Pagar: $ "
+            />
+          </div>
+
+          <div class="d-flex gap-3">
+            <button class="formulario__boton w-50" id="btn-borrar">
+              Borrar
+            </button>
+            <button class="formulario__boton w-50" id="btn-resumen">
+              Resumen
+            </button>
+          </div>
+        </form>
+
+        <form action=""></form>
       </div>
     </main>
     <footer class="footer">
@@ -259,6 +382,6 @@
       </ul>
     </footer>
 
-    <script src="/Bootstrap/bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="comprar-ticket.js"></script>
   </body>
 </html>
