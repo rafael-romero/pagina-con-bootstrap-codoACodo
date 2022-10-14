@@ -23,17 +23,33 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md bg-light">
+      <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid text-bg-dark p-1">
-          <a class="navbar-brand text-bg-dark" href="#" id="link-logo">
+          <a
+            class="navbar-brand text-bg-dark"
+            href="https://github.com/rafael-romero/pagina-con-bootstrap-codoACodo"
+            id="link-logo"
+          >
             <img
               src="img/codoacodo.png"
               alt="logo-codo-a-codo"
               id="logo-codo"
             />Conf Bs As</a
           >
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
                   class="nav-link active text-bg-dark"
@@ -69,6 +85,7 @@
         </div>
       </nav>
     </header>
+
     <main>
       <div class="portada">
         <div class="portada__contenedor" id="conferencia">
@@ -94,72 +111,100 @@
       <div class="oradores">
         <h6 class="oradores__subtitulo">conoce a los</h6>
         <h2 class="oradores__titulo" id="oradores">oradores</h2>
-        <div class="contenedor__cartas">
-          <div class="card container-lg w-25 border-0">
-            <img src="img/steve.jpg" class="card-img-top" alt="Steve-Jobs" />
-            <div class="card-body">
-              <h6 class="badge text-bg-warning">Javascrit</h6>
-              <h6 class="badge text-bg-info text-white">React</h6>
-              <h5 class="card-title">Steve Jobs</h5>
-              <p class="card-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
-                unde accusamus, eaque inventore iste pariatur recusandae rem
-                distinctio provident ut eligendi animi aperiam, perspiciatis
-                magni laboriosam explicabo blanditiis aspernatur! Cupiditate.
-              </p>
+        <div class="contenedor__cartas container-fluid">
+          <div class="row">
+            <div class="col-12 col-sm-4">
+              <div class="card border-0">
+                <img
+                  src="img/steve.jpg"
+                  class="card-img-top"
+                  alt="Steve-Jobs"
+                />
+                <div class="card-body">
+                  <h6 class="badge text-bg-warning">Javascrit</h6>
+                  <h6 class="badge text-bg-info text-white">React</h6>
+                  <h5 class="card-title">Steve Jobs</h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima unde accusamus, eaque inventore iste pariatur
+                    recusandae rem distinctio provident ut eligendi animi
+                    aperiam, perspiciatis magni laboriosam explicabo blanditiis
+                    aspernatur! Cupiditate.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card container-lg w-25 border-0">
-            <img src="img/bill.jpg" class="card-img-top" alt="Bill-Gates" />
-            <div class="card-body">
-              <h6 class="badge text-bg-warning">Javascrit</h6>
-              <h6 class="badge text-bg-info text-white">React</h6>
-              <h5 class="card-title">Bill-Gates</h5>
-              <p class="card-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
-                unde accusamus, eaque inventore iste pariatur recusandae rem
-                distinctio provident ut eligendi animi aperiam, perspiciatis
-                magni laboriosam explicabo blanditiis aspernatur! Cupiditate.
-              </p>
+            <div class="col-12 col-sm-4">
+              <div class="card border-0">
+                <img src="img/bill.jpg" class="card-img-top" alt="Bill-Gates" />
+                <div class="card-body">
+                  <h6 class="badge text-bg-warning">Javascrit</h6>
+                  <h6 class="badge text-bg-info text-white">React</h6>
+                  <h5 class="card-title">Bill-Gates</h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima unde accusamus, eaque inventore iste pariatur
+                    recusandae rem distinctio provident ut eligendi animi
+                    aperiam, perspiciatis magni laboriosam explicabo blanditiis
+                    aspernatur! Cupiditate.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card container-lg w-25 border-0">
-            <img src="img/ada.jpeg" class="card-img-top" alt="Ada-Lovelace" />
-            <div class="card-body">
-              <h6 class="badge text-bg-secondary">Negocios</h6>
-              <h6 class="badge text-bg-danger">Startups</h6>
-              <h5 class="card-title">Ada Lovelace</h5>
-              <p class="card-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
-                unde accusamus, eaque inventore iste pariatur recusandae rem
-                distinctio provident ut eligendi animi aperiam, perspiciatis
-                magni laboriosam explicabo blanditiis aspernatur! Cupiditate.
-              </p>
+            <div class="col-12 col-sm-4">
+              <div class="card border-0">
+                <img
+                  src="img/ada.jpeg"
+                  class="card-img-top"
+                  alt="Ada-Lovelace"
+                />
+                <div class="card-body">
+                  <h6 class="badge text-bg-secondary">Negocios</h6>
+                  <h6 class="badge text-bg-danger">Startups</h6>
+                  <h5 class="card-title">Ada Lovelace</h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima unde accusamus, eaque inventore iste pariatur
+                    recusandae rem distinctio provident ut eligendi animi
+                    aperiam, perspiciatis magni laboriosam explicabo blanditiis
+                    aspernatur! Cupiditate.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="lugar-fecha" id="lugar-fecha">
-        <img
-          src="img/honolulu.jpg"
-          alt="honolulu"
-          class="lugar-fecha__imagen border-end"
-        />
-        <div class="contenedor-lugar">
-          <h4>Bs As - Octubre</h4>
-          <p>
-            Buenos Aires es la provincia y localidad mas grande del estado de
-            Argentina, en los Estados Unidos. Honolulu es la mas sureña de entre
-            las principales ciudades estadounidenses. Aunque el nombe de
-            Honolulu se refiere al area urbana en la costa sureste de la isla de
-            Oahu, la ciudad y el condado de Honolulu han formado una
-            ciudad-condado consolidada que cubre toda la ciudad (aproximadamente
-            600 km<sup>2</sup> de superficie).
-          </p>
-          <button type="button" class="btn btn-outline-light">
-            Conoce mas
-          </button>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-6 p-0">
+              <img
+                src="img/honolulu.jpg"
+                alt="honolulu"
+                class="lugar-fecha__imagen border-end"
+              />
+            </div>
+
+            <div class="col-12 col-md-6 p-0">
+              <div class="contenedor-lugar">
+                <h4>Bs As - Octubre</h4>
+                <p>
+                  Buenos Aires es la provincia y localidad mas grande del estado
+                  de Argentina, en los Estados Unidos. Honolulu es la mas sureña
+                  de entre las principales ciudades estadounidenses. Aunque el
+                  nombe de Honolulu se refiere al area urbana en la costa
+                  sureste de la isla de Oahu, la ciudad y el condado de Honolulu
+                  han formado una ciudad-condado consolidada que cubre toda la
+                  ciudad (aproximadamente 600 km<sup>2</sup> de superficie).
+                </p>
+                <button type="button" class="btn btn-outline-light">
+                  Conoce mas
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
