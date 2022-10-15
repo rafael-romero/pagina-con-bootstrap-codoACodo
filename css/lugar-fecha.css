@@ -3,8 +3,9 @@
   margin-bottom: 2rem;
 }
 
-.lugar-fecha__imagen {
-  width: 50vw;
+.lugar-fecha__imagen,
+.contenedor-lugar {
+  width: 100%;
 }
 
 .contenedor-lugar {

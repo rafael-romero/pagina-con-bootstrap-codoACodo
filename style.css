@@ -30,7 +30,7 @@ body {
 }
 
 .portada {
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 106px);
   background-color: rgba(0, 0, 0, 0.5);
   background-image: url(img/ba1.jpg);
@@ -63,4 +63,8 @@ body {
 .error {
   font-weight: 700;
   color: red;
+}
+
+#footer {
+  background-color: rgb(29, 64, 84);
 }

@@ -18,22 +18,37 @@
     <link rel="stylesheet" href="css/oradores.css" />
     <link rel="stylesheet" href="css/lugar-fecha.css" />
     <link rel="stylesheet" href="css/formulario.css" />
-    <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/comprar-tickets.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md bg-light">
+      <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid text-bg-dark p-1">
-          <a class="navbar-brand text-bg-dark" href="#" id="link-logo">
+          <a
+            class="navbar-brand text-bg-dark"
+            href="https://github.com/rafael-romero/pagina-con-bootstrap-codoACodo"
+            id="link-logo"
+          >
             <img
               src="img/codoacodo.png"
               alt="logo-codo-a-codo"
               id="logo-codo"
             />Conf Bs As</a
           >
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
                   class="nav-link active text-bg-dark"
@@ -69,6 +84,7 @@
         </div>
       </nav>
     </header>
+
     <main>
       <div class="portada">
         <div class="portada__contenedor" id="conferencia">
@@ -94,86 +110,114 @@
       <div class="oradores">
         <h6 class="oradores__subtitulo">conoce a los</h6>
         <h2 class="oradores__titulo" id="oradores">oradores</h2>
-        <div class="contenedor__cartas">
-          <div class="card container-lg w-25 border-0">
-            <img src="img/steve.jpg" class="card-img-top" alt="Steve-Jobs" />
-            <div class="card-body">
-              <h6 class="badge text-bg-warning">Javascrit</h6>
-              <h6 class="badge text-bg-info text-white">React</h6>
-              <h5 class="card-title">Steve Jobs</h5>
-              <p class="card-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
-                unde accusamus, eaque inventore iste pariatur recusandae rem
-                distinctio provident ut eligendi animi aperiam, perspiciatis
-                magni laboriosam explicabo blanditiis aspernatur! Cupiditate.
-              </p>
+        <div class="contenedor__cartas container-fluid">
+          <div class="row">
+            <div class="col-12 col-sm-4">
+              <div class="card border-0">
+                <img
+                  src="img/steve.jpg"
+                  class="card-img-top"
+                  alt="Steve-Jobs"
+                />
+                <div class="card-body">
+                  <h6 class="badge text-bg-warning">Javascrit</h6>
+                  <h6 class="badge text-bg-info text-white">React</h6>
+                  <h5 class="card-title">Steve Jobs</h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima unde accusamus, eaque inventore iste pariatur
+                    recusandae rem distinctio provident ut eligendi animi
+                    aperiam, perspiciatis magni laboriosam explicabo blanditiis
+                    aspernatur! Cupiditate.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card container-lg w-25 border-0">
-            <img src="img/bill.jpg" class="card-img-top" alt="Bill-Gates" />
-            <div class="card-body">
-              <h6 class="badge text-bg-warning">Javascrit</h6>
-              <h6 class="badge text-bg-info text-white">React</h6>
-              <h5 class="card-title">Bill-Gates</h5>
-              <p class="card-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
-                unde accusamus, eaque inventore iste pariatur recusandae rem
-                distinctio provident ut eligendi animi aperiam, perspiciatis
-                magni laboriosam explicabo blanditiis aspernatur! Cupiditate.
-              </p>
+            <div class="col-12 col-sm-4">
+              <div class="card border-0">
+                <img src="img/bill.jpg" class="card-img-top" alt="Bill-Gates" />
+                <div class="card-body">
+                  <h6 class="badge text-bg-warning">Javascrit</h6>
+                  <h6 class="badge text-bg-info text-white">React</h6>
+                  <h5 class="card-title">Bill-Gates</h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima unde accusamus, eaque inventore iste pariatur
+                    recusandae rem distinctio provident ut eligendi animi
+                    aperiam, perspiciatis magni laboriosam explicabo blanditiis
+                    aspernatur! Cupiditate.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card container-lg w-25 border-0">
-            <img src="img/ada.jpeg" class="card-img-top" alt="Ada-Lovelace" />
-            <div class="card-body">
-              <h6 class="badge text-bg-secondary">Negocios</h6>
-              <h6 class="badge text-bg-danger">Startups</h6>
-              <h5 class="card-title">Ada Lovelace</h5>
-              <p class="card-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
-                unde accusamus, eaque inventore iste pariatur recusandae rem
-                distinctio provident ut eligendi animi aperiam, perspiciatis
-                magni laboriosam explicabo blanditiis aspernatur! Cupiditate.
-              </p>
+            <div class="col-12 col-sm-4">
+              <div class="card border-0">
+                <img
+                  src="img/ada.jpeg"
+                  class="card-img-top"
+                  alt="Ada-Lovelace"
+                />
+                <div class="card-body">
+                  <h6 class="badge text-bg-secondary">Negocios</h6>
+                  <h6 class="badge text-bg-danger">Startups</h6>
+                  <h5 class="card-title">Ada Lovelace</h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima unde accusamus, eaque inventore iste pariatur
+                    recusandae rem distinctio provident ut eligendi animi
+                    aperiam, perspiciatis magni laboriosam explicabo blanditiis
+                    aspernatur! Cupiditate.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="lugar-fecha" id="lugar-fecha">
-        <img
-          src="img/honolulu.jpg"
-          alt="honolulu"
-          class="lugar-fecha__imagen border-end"
-        />
-        <div class="contenedor-lugar">
-          <h4>Bs As - Octubre</h4>
-          <p>
-            Buenos Aires es la provincia y localidad mas grande del estado de
-            Argentina, en los Estados Unidos. Honolulu es la mas sureña de entre
-            las principales ciudades estadounidenses. Aunque el nombe de
-            Honolulu se refiere al area urbana en la costa sureste de la isla de
-            Oahu, la ciudad y el condado de Honolulu han formado una
-            ciudad-condado consolidada que cubre toda la ciudad (aproximadamente
-            600 km<sup>2</sup> de superficie).
-          </p>
-          <button type="button" class="btn btn-outline-light">
-            Conoce mas
-          </button>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-6 p-0">
+              <img
+                src="img/honolulu.jpg"
+                alt="honolulu"
+                class="lugar-fecha__imagen border-end h-100"
+              />
+            </div>
+
+            <div class="col-12 col-md-6 p-0">
+              <div class="contenedor-lugar h-100">
+                <h4>Bs As - Octubre</h4>
+                <p>
+                  Buenos Aires es la provincia y localidad mas grande del estado
+                  de Argentina, en los Estados Unidos. Honolulu es la mas sureña
+                  de entre las principales ciudades estadounidenses. Aunque el
+                  nombe de Honolulu se refiere al area urbana en la costa
+                  sureste de la isla de Oahu, la ciudad y el condado de Honolulu
+                  han formado una ciudad-condado consolidada que cubre toda la
+                  ciudad (aproximadamente 600 km<sup>2</sup> de superficie).
+                </p>
+                <button type="button" class="btn btn-outline-light">
+                  Conoce mas
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div id="formulario" class="formulario .container-md">
+      <div id="formulario" class="formulario container-md">
         <form action="">
           <h6 class="formulario__subtitulo">conviertete en un</h6>
           <h2 class="formulario__titulo">orador</h2>
-          <p class="formulario__parrafo">
+          <p class="formulario__parrafo text-wrap">
             Anotate como orador para dar una
             <span class="text-decoration-underline">charla ignite</span>.
             Cuentanos de que quieres hablar!
           </p>
           <div class="contenedor__nombre-y-apellido row gx-3">
-            <div class="form-floating mb-3 col-6">
+            <div class="form-floating mb-3 col-12 col-md-6">
               <input
                 type="text"
                 class="form-control"
@@ -182,7 +226,7 @@
               />
               <label for="floatingNombre">Nombre</label>
             </div>
-            <div class="form-floating col-6">
+            <div class="form-floating mb-3 col-12 col-md-6">
               <input
                 type="text"
                 class="form-control"
@@ -192,34 +236,37 @@
               <label for="floatingApellido">Apellido</label>
             </div>
           </div>
-          <div class="form-floating">
-            <textarea
-              class="form-control"
-              placeholder="Sobre que quieres hablar?"
-              id="floatingTextarea"
-            ></textarea>
-            <label for="floatingTextarea">Sobre que quieres hablar?</label>
+          <div class="row">
+            <div class="form-floating col-md-12">
+              <textarea
+                class="form-control"
+                placeholder="Sobre que quieres hablar?"
+                id="floatingTextarea"
+              ></textarea>
+              <label for="floatingTextarea">Sobre que quieres hablar?</label>
+            </div>
+
+            <div class="form-floating mb-3 col-md-12">
+              <input
+                type="text"
+                readonly
+                class="form-control-plaintext"
+                id="floatingEmptyPlaintextInput"
+                placeholder="titulo"
+              />
+              <label for="floatingEmptyPlaintextInput"
+                >Recuerda incluir un titulo para tu charla</label
+              >
+            </div>
           </div>
-          <div class="form-floating mb-3">
-            <input
-              type="email"
-              readonly
-              class="form-control-plaintext"
-              id="floatingEmptyPlaintextInput"
-              placeholder="titulo"
-            />
-            <label for="floatingEmptyPlaintextInput"
-              >Recuerda incluir un titulo para tu charla</label
-            >
-          </div>
-          <button class="formulario__boton">Enviar</button>
+          <button type="button" class="formulario__boton btn">Enviar</button>
         </form>
       </div>
 
-      <div class="comprar-tickets" id="comprar-tickets">
+      <div class="comprar-tickets container-md" id="comprar-tickets">
         <div class="contenedor__descuentos">
           <div class="row justify-content-center">
-            <div class="col-sm-4">
+            <div class="col-md-4">
               <div class="card border-primary text-center rounded-0">
                 <div class="card-body">
                   <h5 class="card-title">Estudiante</h5>
@@ -229,7 +276,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-4">
               <div class="card border-success text-center rounded-0">
                 <div class="card-body">
                   <h5 class="card-title">Trainee</h5>
@@ -239,7 +286,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-4">
               <div class="card border-warning text-center rounded-0">
                 <div class="card-body">
                   <h5 class="card-title">Junior</h5>
@@ -256,7 +303,7 @@
           <h6 class="formulario__subtitulo">venta</h6>
           <h2 class="formulario__titulo mb-3">valor de ticket $200</h2>
           <div class="contenedor__nombre-y-apellido row gx-3">
-            <div class="form-floating mb-3 col-6">
+            <div class="form-floating mb-3 col-12 col-md-6">
               <input
                 type="text"
                 class="form-control"
@@ -265,7 +312,7 @@
               />
               <label for="nombreflotante">Nombre</label>
             </div>
-            <div class="form-floating col-6">
+            <div class="form-floating col-12 col-md-6">
               <input
                 type="text"
                 class="form-control"
@@ -285,7 +332,7 @@
             <label for="correoFlotante">Correo</label>
           </div>
           <div class="row contenedor__cantidad-y-categoria d-flex gx-3 mt-3">
-            <div class="mb-3 col-6">
+            <div class="mb-3 col-12 col-md-6">
               <label for="cantidad-input" class="form-label">Cantidad</label>
               <input
                 type="number"
@@ -297,7 +344,7 @@
               />
             </div>
 
-            <div class="mb-3 col-6">
+            <div class="mb-3 col-12 col-md-6">
               <label for="input-select" class="form-label">Categoria</label>
               <select
                 class="form-select"
@@ -323,59 +370,68 @@
             />
           </div>
 
-          <div class="d-flex gap-3">
-            <button class="formulario__boton w-50" id="btn-borrar">
-              Borrar
-            </button>
-            <button class="formulario__boton w-50" id="btn-resumen">
-              Resumen
-            </button>
+          <div class=" d-md-flex gap-3 mb-3">
+            <div class="col-12 col-md-6">
+              <button class="formulario__boton btn" id="btn-borrar">
+                Borrar
+              </button>
+            </div>
+            <div class="col-12 col-md-6">
+              <button class="formulario__boton btn" id="btn-resumen">
+                Resumen
+              </button>
+            </div>
           </div>
         </form>
 
         <form action=""></form>
       </div>
     </main>
-    <footer class="footer">
-      <ul
-        class="footer__lista d-flex flex-row justify-content-evenly align-items-center"
-      >
-        <li class="footer__item">
-          <a href="#" class="footer__link text-white text-decoration-none"
-            >Preguntas Frecuentes</a
+
+    <footer id="footer">
+      <nav class="navbar navbar-expand-lg" id="nav-footer">
+        <div class="container-fluid bg-transparent text-dark p-5">
+          <a class="navbar-brand" href="#"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav2"
+            aria-controls="navbarNav2"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link text-white text-decoration-none"
-            >Contactenos</a
-          >
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link text-white text-decoration-none"
-            >Prensa</a
-          >
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link text-white text-decoration-none"
-            >Conferencias</a
-          >
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link text-white text-decoration-none"
-            >Terminos y Condiciones</a
-          >
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link text-white text-decoration-none"
-            >Privacidad</a
-          >
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link text-white text-decoration-none"
-            >Estudiantes</a
-          >
-        </li>
-      </ul>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav2">
+            <ul class="navbar-nav nav ">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Preguntas Frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contactenos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Prensa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Conferencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"
+                  >Terminos y Condiciones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Privacidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Estudiantes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </footer>
 
     <script src="comprar-ticket.js"></script>
