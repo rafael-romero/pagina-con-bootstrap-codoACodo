@@ -86,10 +86,10 @@
     </header>
 
     <main>
-      <div class="portada">
+      <div class="portada container-fluid">
         <div class="portada__contenedor" id="conferencia">
-          <h2 class="portada__titulo text-end">Conf Bs As</h2>
-          <p class="portada__texto text-end">
+          <h2 class="portada__titulo text-end fs-2">Conf Bs As</h2>
+          <p class="portada__texto text-end fs-6">
             Bs As llega por primera vez a Argentina. Un evento para compartir
             con nuestra comunidad el conocimiento y experiencia de los expertos
             que estan creando el futuro de Internet. Ven a conocer a miembros
@@ -207,7 +207,7 @@
         </div>
       </div>
 
-      <div id="formulario" class="formulario container-md">
+      <div id="formulario" class="formulario container-md col-md-6">
         <form action="">
           <h6 class="formulario__subtitulo">conviertete en un</h6>
           <h2 class="formulario__titulo">orador</h2>
@@ -263,10 +263,10 @@
         </form>
       </div>
 
-      <div class="comprar-tickets container-md" id="comprar-tickets">
+      <div class="comprar-tickets container-md col-md-6" id="comprar-tickets">
         <div class="contenedor__descuentos">
           <div class="row justify-content-center">
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
               <div class="card border-primary text-center rounded-0">
                 <div class="card-body">
                   <h5 class="card-title">Estudiante</h5>
@@ -276,7 +276,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
               <div class="card border-success text-center rounded-0">
                 <div class="card-body">
                   <h5 class="card-title">Trainee</h5>
@@ -286,7 +286,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
               <div class="card border-warning text-center rounded-0">
                 <div class="card-body">
                   <h5 class="card-title">Junior</h5>
@@ -312,7 +312,7 @@
               />
               <label for="nombreflotante">Nombre</label>
             </div>
-            <div class="form-floating col-12 col-md-6">
+            <div class="form-floating col-12 col-md-6 mb-3">
               <input
                 type="text"
                 class="form-control"
@@ -388,52 +388,20 @@
       </div>
     </main>
 
-    <footer id="footer">
-      <nav class="navbar navbar-expand-lg" id="nav-footer">
-        <div class="container-fluid bg-transparent text-dark p-5">
-          <a class="navbar-brand" href="#"></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav2"
-            aria-controls="navbarNav2"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNav2">
-            <ul class="navbar-nav nav ">
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Preguntas Frecuentes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Contactenos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Prensa</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Conferencias</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#"
-                  >Terminos y Condiciones</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Privacidad</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Estudiantes</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </footer>
 
+    <footer>
+        <div
+            class="container py-3 d-flex flex-column flex-md-row  justify-content-lg-around justify-content-md-center align-items-center">
+            <a href="#" class="m-2 text-white text-decoration-none">Preguntas <br>Frecuentes</br></a>
+            <a href="#" class="m-2 text-white text-decoration-none">Contáctanos</a>
+            <a href="#" class="m-2 text-white text-decoration-none">Prensa</a>
+            <a href="#" class="m-2 text-white text-decoration-none">Conferencias</a>
+            <a href="#" class="m-2 text-white text-decoration-none">Terminos y <br>condiciones</br></a>
+            <a href="#" class="m-2 text-white text-decoration-none">Privacidad</a>
+            <a href="#" class="m-2 text-white text-decoration-none">Estudiantes</a>
+        </div>
+    </footer>
+    
     <script src="comprar-ticket.js"></script>
     <script src="bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
   </body>

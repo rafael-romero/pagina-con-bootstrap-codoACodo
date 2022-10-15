@@ -1,6 +1,6 @@
 .comprar-tickets {
   margin: 0 auto;
-  width: 44rem;
+  max-width: 100vw;
 }
 
 .card-body > h6 {
