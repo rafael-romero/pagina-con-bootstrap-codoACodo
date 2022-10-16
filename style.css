@@ -5,10 +5,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
-#link-logo {
-  position: relative;
-  left: 7rem;
-}
+
 
 #logo-codo {
   width: 140px;
@@ -67,4 +64,11 @@ body {
 
 footer {
   background-color: rgb(29, 64, 84);
+}
+
+/* Media query */
+@media only screen and (max-width: 578px) {
+  .portada__titulo, .portada__texto {
+    display: none;
+  }
 }
